@@ -1,0 +1,154 @@
+/*==============================================
+FUENTES
+===============================================*/
+:root {
+	--fuenteBody: 'Outfit', sans-serif;
+}
+
+/*==============================================
+GENERALES
+===============================================*/
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+	height: 100%;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+body {
+	font-family: var(--fuenteBody);
+	font-size: 1.5rem;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(176,190,197);
+	line-height: 1.5;
+	height: 100%;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+.container {
+	max-width: 800px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+/*==============================================
+CARD
+===============================================*/
+.nft__card--container {
+	background-color: rgb(84,110,122);
+	min-width: 300px;
+	max-width: 300px;
+	border-radius: 1rem;
+	-webkit-border-radius: 1rem;
+	-moz-border-radius: 1rem;
+	-ms-border-radius: 1rem;
+	-o-border-radius: 1rem;
+	padding: 2rem 0;
+	filter:drop-shadow(0px 12px 24px rgba(0,0,0,.35));
+	-webkit-filter:drop-shadow(0px 12px 24px rgba(0,0,0,.35));
+}
+.card--img img {
+	border-radius: .5rem;
+	-webkit-border-radius: .5rem;
+	-moz-border-radius: .5rem;
+	-ms-border-radius: .5rem;
+	-o-border-radius: .5rem;
+	position: relative;
+}
+.back-hover {
+	background-color: #34be82a6;
+	height: 240px;
+	width: 24rem;
+	position: absolute;
+	top: 2rem;
+	border-radius: .5rem;
+	-webkit-border-radius: .5rem;
+	-moz-border-radius: .5rem;
+	-ms-border-radius: .5rem;
+	-o-border-radius: .5rem;
+	opacity: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.back-hover i {
+	font-size: 4rem;
+}
+.back-hover:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+.card--heading {
+	color: #fff;
+	font-weight: 500;
+	font-size: 1.8rem;
+}
+.card--heading:hover {
+	color: #34BE82;
+	cursor: pointer;
+}
+.nft__card p {
+	color: rgb(38,50,56);
+}
+.nft__card p span {
+	font-style: italic;
+}
+
+/*==============================================
+CARD PRICE / TIME
+===============================================*/
+.card__price-time, .price, .time {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+.card__price-time {
+	justify-content: space-between;
+}
+.price i, .price p {
+	color: #34BE82;
+}
+.price i, .time i {
+	font-size: 2rem;
+}
+.time p {
+	color: #fff;
+}
+.breaker {
+	border: 1px solid rgba(176, 190, 197, 0.253);
+	margin-bottom: .5rem;
+}
+
+/*==============================================
+CARD PROFILE
+===============================================*/
+.profile__info {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+.profile__img img {
+	width: 3rem;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+.profile__txt {
+	font-size: 1.2rem;
+}
+.profile__txt p span {
+	color: #fff;
+}
+.profile__txt p span:hover {
+	color: #34BE82;
+	cursor: pointer;
+}
